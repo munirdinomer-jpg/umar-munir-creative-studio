@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI-powered product advertisements, short promotional videos, YouTube thumbnails and creative designs by Umar Munir.">
+  <meta name="theme-color" content="#101014">
+  <title>Umar Munir | AI Creative Studio</title>
+  <style>
+    :root{--bg:#101014;--panel:#19191f;--panel2:#202027;--gold:#e9bd65;--gold2:#f6d99b;--text:#f7f4ed;--muted:#b9b5ad;--line:rgba(255,255,255,.11)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(16,16,20,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-weight:800;letter-spacing:.3px}.brand span{color:var(--gold)}
+    .navlinks{display:flex;gap:25px;color:var(--muted);font-size:14px}.navlinks a:hover{color:var(--gold)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:999px;background:var(--gold);color:#17130b;font-weight:800;border:1px solid var(--gold);transition:.2s}
+    .btn:hover{background:var(--gold2);transform:translateY(-2px)}.btn.outline{background:transparent;color:var(--gold)}
+    .hero{padding:100px 0 82px;background:radial-gradient(ellipse at 80% 15%,rgba(233,189,101,.15),transparent 38%),linear-gradient(135deg,#101014,#17171d)}
+    .eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:2.5px;font-size:12px;font-weight:800}
+    h1{font-size:clamp(42px,7vw,76px);line-height:1.06;letter-spacing:-2px;margin:18px 0 20px;max-width:850px}
+    h1 em{font-style:normal;color:var(--gold)}.hero p{max-width:650px;color:var(--muted);font-size:18px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.mini{display:flex;gap:24px;flex-wrap:wrap;margin-top:48px;color:var(--muted);font-size:13px}.mini b{color:var(--text)}
+    section{padding:78px 0}.section-head{max-width:650px;margin-bottom:32px}.section-head h2{font-size:clamp(30px,4vw,44px);line-height:1.15;margin:10px 0}.section-head p{color:var(--muted);margin:0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:25px}
+    .card .symbol{font-size:25px;color:var(--gold)}.card h3{margin:13px 0 7px}.card p{margin:0;color:var(--muted);font-size:14px}
+    .portfolio{background:#141419}.work{min-height:210px;border-radius:18px;border:1px solid var(--line);padding:22px;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(145deg,#28252a,#17171d)}
+    .work:nth-child(2){background:linear-gradient(145deg,#29231a,#17171d)}.work:nth-child(3){background:linear-gradient(145deg,#202a2b,#17171d)}
+    .work .tag{font-size:11px;letter-spacing:1.5px;color:var(--gold);font-weight:800}.work h3{font-size:23px;margin:8px 0}.work p{color:var(--muted);font-size:13px;margin:0}
+    .note{font-size:12px;color:#96918a;margin-top:14px}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}.aboutbox{padding:30px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,#211f20,#17171d)}
+    .aboutbox .big{font-size:52px;color:var(--gold);font-weight:900;line-height:1}
+    .about p{color:var(--muted)}.steps{display:grid;gap:14px}.step{display:flex;gap:15px;align-items:flex-start}.num{width:34px;height:34px;flex:0 0 34px;border-radius:50%;display:grid;place-items:center;background:rgba(233,189,101,.14);color:var(--gold);font-weight:800}
+    .pricing .card{display:flex;flex-direction:column}.pricing .card .btn{margin-top:20px;align-self:flex-start}.price{font-size:25px;color:var(--gold);font-weight:800;margin:10px 0}.pricing small{color:var(--muted)}
+    .contact{background:radial-gradient(ellipse at 20% 50%,rgba(233,189,101,.12),transparent 45%),#141419}.contactbox{display:flex;align-items:center;justify-content:space-between;gap:25px;padding:35px;border:1px solid var(--line);border-radius:22px;background:var(--panel)}
+    footer{padding:28px 0;color:#938f88;border-top:1px solid var(--line);font-size:13px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    .mobile-menu{display:none}
+    @media(max-width:760px){.navlinks{display:none}.mobile-menu{display:inline-flex}.grid{grid-template-columns:1fr}.about{grid-template-columns:1fr}.hero{padding:76px 0 65px}.contactbox{align-items:flex-start;flex-direction:column}section{padding:60px 0}}
+  </style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="brand" href="#home">UMAR MUNIR <span>· AI CREATIVE STUDIO</span></a>
+  <div class="navlinks"><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+  <a class="btn mobile-menu" href="#contact">Contact</a>
+</nav></div></header>
+<main id="home">
+  <section class="hero"><div class="wrap">
+    <div class="eyebrow">Creative advertising • Digital design</div>
+    <h1>Make your brand stand out with <em>creative AI ads.</em></h1>
+    <p>Attention-grabbing product advertisements, short promotional videos and social media designs for businesses that want to present their products with style.</p>
+    <div class="actions"><a class="btn" href="https://wa.me/923142557657?text=Assalam-o-Alaikum%2C%20I%20want%20to%20discuss%20an%20advertisement.">Order on WhatsApp ↗</a><a class="btn outline" href="#portfolio">View sample work</a></div>
+    <div class="mini"><span><b>AI Product Ads</b> · Short video promotions</span><span><b>Creative Design</b> · Thumbnails & social posts</span></div>
+  </div></section>
+
+  <section id="services"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">What I create</div><h2>Creative services for your business</h2><p>Choose a service and message me with your product, idea and preferred style.</p></div>
+    <div class="grid">
+      <article class="card"><div class="symbol">✦</div><h3>AI Product Advertisement Videos</h3><p>Promotional video concepts to showcase products and highlight key features.</p></article>
+      <article class="card"><div class="symbol">▶</div><h3>Short Promotional Ads</h3><p>Short-form video ads designed for social media and digital promotion.</p></article>
+      <article class="card"><div class="symbol">▧</div><h3>YouTube Thumbnails</h3><p>Clear, eye-catching thumbnail designs that match your video topic.</p></article>
+      <article class="card"><div class="symbol">◈</div><h3>Social Media Designs</h3><p>Post creatives and promotional graphics for your social channels.</p></article>
+      <article class="card"><div class="symbol">☼</div><h3>Food & Restaurant Ads</h3><p>Creative visuals for menu items, food offers and restaurant promotions.</p></article>
+      <article class="card"><div class="symbol">✧</div><h3>Product Marketing Visuals</h3><p>Simple, polished graphics to help present your product online.</p></article>
+    </div>
+  </div></section>
+
+  <section class="portfolio" id="portfolio"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">Selected concepts</div><h2>Portfolio & sample work</h2><p>Replace these sample tiles with your own finished advertisements when ready.</p></div>
+    <div class="grid">
+      <article class="work"><div><div class="tag">PRODUCT AD CONCEPT</div><h3>Chocolate Promotion</h3><p>Sample portfolio slot — add your chocolate advertisement.</p></div><div class="tag">YOUR WORK HERE</div></article>
+      <article class="work"><div><div class="tag">SNACKS CAMPAIGN</div><h3>Chips Advertisement</h3><p>Sample portfolio slot — add your chips advertisement.</p></div><div class="tag">YOUR WORK HERE</div></article>
+      <article class="work"><div><div class="tag">FOOD PROMOTION</div><h3>Pizza & Burger Ads</h3><p>Sample portfolio slot — add your food advertisement.</p></div><div class="tag">YOUR WORK HERE</div></article>
+    </div>
+    <div class="note">These are placeholders, not completed client projects or customer endorsements.</div>
+  </div></section>
+
+  <section id="about"><div class="wrap about">
+    <div><div class="eyebrow">About the creator</div><h2 style="font-size:clamp(30px,4vw,44px);line-height:1.15">Hello, I'm Umar Munir.</h2><p>I create AI-assisted advertisements and digital designs for businesses, creators and product sellers. My focus is on clear communication, creative presentation and work shaped around each client's brief.</p><a class="btn" href="https://wa.me/923142557657?text=Assalam-o-Alaikum%2C%20I%20would%20like%20to%20know%20about%20your%20services.">Discuss a project ↗</a></div>
+    <div class="aboutbox"><div class="big">01</div><h3>Simple process. Clear communication.</h3><div class="steps"><div class="step"><div class="num">1</div><div><b>Share your idea</b><p>Send your product details, goal and any references.</p></div></div><div class="step"><div class="num">2</div><div><b>Confirm the brief</b><p>Agree on the deliverable, timeline and price before work begins.</p></div></div><div class="step"><div class="num">3</div><div><b>Receive your design</b><p>Review the work and share any agreed changes.</p></div></div></div></div>
+  </div></section>
+
+  <section class="pricing"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">Work together</div><h2>Packages made around your project</h2><p>Pricing depends on the type of ad, length, complexity and required revisions. Message me for a quote.</p></div>
+    <div class="grid">
+      <article class="card"><h3>Starter</h3><div class="price">Custom quote</div><small>For one simple creative</small><p>One thumbnail or social media design, based on your brief.</p><a class="btn outline" href="https://wa.me/923142557657?text=Please%20share%20a%20quote%20for%20a%20Starter%20design.">Ask for price</a></article>
+      <article class="card"><h3>Video Ad</h3><div class="price">Custom quote</div><small>For a short promotion</small><p>Short AI-assisted promotional video, with scope confirmed in advance.</p><a class="btn" href="https://wa.me/923142557657?text=Please%20share%20a%20quote%20for%20a%20short%20video%20ad.">Ask for price</a></article>
+      <article class="card"><h3>Business Bundle</h3><div class="price">Custom quote</div><small>For multiple creatives</small><p>A combination of promotional designs and video content for your business.</p><a class="btn outline" href="https://wa.me/923142557657?text=Please%20share%20a%20quote%20for%20a%20Business%20Bundle.">Ask for price</a></article>
+    </div>
+  </div></section>
+
+  <section class="contact" id="contact"><div class="wrap"><div class="contactbox">
+    <div><div class="eyebrow">Let's work together</div><h2 style="font-size:clamp(28px,4vw,40px);margin:8px 0">Have a product to promote?</h2><p style="color:var(--muted);margin:0">Send a WhatsApp message and tell me what you need.</p><p style="color:var(--gold);font-weight:800">WhatsApp: 0314 2557657</p></div>
+    <a class="btn" href="https://wa.me/923142557657?text=Assalam-o-Alaikum%2C%20I%20want%20to%20order%20an%20advertisement.">Chat on WhatsApp ↗</a>
+  </div></div></section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> Umar Munir · AI Creative Studio</span><span>Designed for creative business promotion</span></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
